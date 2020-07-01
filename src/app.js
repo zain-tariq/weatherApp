@@ -3,7 +3,7 @@ const path = require('path')
 const hbs = require('hbs')
 const foreCast = require('../public/utils/forecast.js')
 
-
+const port = process.env.PORT || 3000
 const app = express()
 const publicDirPath = path.join(__dirname,'../public')
 const viewPath = path.join(__dirname,'../templates/views')
@@ -61,6 +61,6 @@ app.get('*', (req,res) => {
     })
 })
 
-app.listen(3000, ()=> {
-    console.log('Server is on Bitches!!!')
+app.listen(port, ()=> {
+    console.log('Server is on at '+port)
 })
