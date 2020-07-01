@@ -1,7 +1,7 @@
 const express = require('express')
 const path = require('path')
 const hbs = require('hbs')
-const foreCast = require('../public/utils/forecast.js')
+const foreCast = require('../../public/utils/forecast.js')
 
 const port = process.env.PORT || 3000
 const app = express()
